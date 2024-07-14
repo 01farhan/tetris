@@ -1715,6 +1715,13 @@
       $("#right").click(function () {
         board.rightKeyPress();
       });
+      document.addEventListener(
+        "dblclick",
+        function (event) {
+          event.preventDefault();
+        },
+        { passive: false }
+      );
     </script>
   </body>
 </html>
